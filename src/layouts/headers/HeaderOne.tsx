@@ -1,4 +1,3 @@
-
 "use client"
 
 import React, { useState } from 'react'
@@ -16,17 +15,24 @@ export default function HeaderOne({ style_2 }: PropsType) {
   const { sticky } = useSticky()
   const [open, setOpen] = useState(false)
 
-
   return (
     <>
-      <header id="header-sticky" className={`header-1 ${sticky ? "sticky" : ""} ${style_2 ? "header-3" : ""}`}>
+      <header
+        id="header-sticky"
+        className={`header-1 ${sticky ? "sticky" : ""} ${style_2 ? "header-3" : ""} bg-grey-100`}
+        style={{ padding: sticky ? '6px 0' : '8px 0', transition: 'padding .18s ease' }}
+      >
         <div className="container">
           <div className="mega-menu-wrapper">
             <div className="header-main">
               <div className="header-left">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="assets/img/logo/logo.png" alt="logo-img" />
+                    <img
+                      src="assets/img/logo/logo1.png"
+                      alt="logo-img"
+                      style={{ width: '56px', height: 'auto' }}
+                    />
                   </Link>
                 </div>
               </div>
@@ -34,11 +40,11 @@ export default function HeaderOne({ style_2 }: PropsType) {
                 <div className="mean__menu-wrapper">
                   <div className="main-menu d-none d-xl-block">
                     <nav id="mobile-menu">
-                       <NavMenu />
+                      <NavMenu />
                     </nav>
                   </div>
                 </div>
-                <div className="shop-adjust"> 
+                <div className="shop-adjust">
                   <div className="header-button d-sm-block d-none">
                     <Link href="/contact" className="cmn-btn d-center round100 cmn-white-clr">
                       Get A Quote

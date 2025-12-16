@@ -15,20 +15,21 @@ import BlogHomeOne from './BlogHomeOne'
 import BrandHomeOne from './BrandHomeOne'
 import SubscribeHomeOne from './SubscribeHomeOne'
 import FooterOne from '@/layouts/footers/FooterOne'
+import HeaderTwo from '@/layouts/headers/HeaderTwo'
 
 export default function HomeOne() {
   return (
     <>
-      <HeaderOne />
+      <HeaderTwo />
       <HeroHomeOne />
       <AboutHomeOne />
       <GalleryHomeOne />
       <CounterHomeOne />
       <ServiceHomeOne />
       <TestimoniaHomeOne />
-      <PortfolioHomeOne />
-      <CtaHomeOne />
-      <FeatureVideo />
+      {/* <PortfolioHomeOne /> */}
+      {/* <CtaHomeOne /> */}
+      {/* <FeatureVideo /> */}
       <BlogHomeOne />
       <BrandHomeOne />
       <SubscribeHomeOne />

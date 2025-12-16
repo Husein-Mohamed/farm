@@ -3,6 +3,7 @@ import React from 'react'
 import { Metadata } from 'next';
 import HomeOne from '@/components/homes/home';
 import Wrapper from '@/layouts/Wrapper';
+import HomeTwo from '@/components/homes/home-2';
 
 export const metadata: Metadata = {
   title: 'FarmHub - Agriculture Farming Next js Template',
@@ -12,7 +13,8 @@ export const metadata: Metadata = {
 export default function index() {
   return (
     <Wrapper>
-      <HomeOne />
+      {/* <HomeOne /> */}
+      <HomeTwo />
     </Wrapper>
   )
 }

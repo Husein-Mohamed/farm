@@ -22,12 +22,12 @@ const menu_data: DataType[] = [
 	{
 		id: 1,
 		title: "Home",
-		link: "#",
+		link: "/",
 		img_dropdown: true,
 		sub_menus: [
-			{ link: "/", title: "Home 01", demo_img: demo_img_1 },
+			// { link: "/", title: "Home 01", demo_img: demo_img_1 },
 			{ link: "/home-2", title: "Home 02", demo_img: demo_img_2 },
-			{ link: "/home-3", title: "Home 03", demo_img: demo_img_3 },
+			// { link: "/home-3", title: "Home 03", demo_img: demo_img_3 },
 		],
 	},
 	{
@@ -39,12 +39,12 @@ const menu_data: DataType[] = [
 	{
 		id: 3,
 		title: "Service",
-		link: "#",
+		link: "/service",
 		has_dropdown: true,
-		sub_menus: [
-			{ link: "/service", title: "Services" },
-			{ link: "/service-details", title: "Services Details" },
-		],
+		// sub_menus: [
+		// 	{ link: "/service", title: "Services" },
+		// 	{ link: "/service-details", title: "Services Details" },
+		// ],
 	},
 	{
 		id: 4,
@@ -56,29 +56,42 @@ const menu_data: DataType[] = [
 			{ link: "/gallery-details", title: "Gallery Details" },
 		],
 	},
+
+
 	{
 		id: 5,
-		title: "Blog",
-		link: "#",
-		has_dropdown: true,
-		sub_menus: [
-			{ link: "/blog", title: "Blog" },
-			{ link: "/blog-details", title: "Blog Details" },
-		],
+		title: "FAQ",
+		link: "/faq",
+		has_dropdown: false,
 	},
-	{
-		id: 6,
-		title: "Pages",
-		link: "#",
-		has_dropdown: true,
-		sub_menus: [
-			{ link: "/about", title: "About" },
-			{ link: "/product-list", title: "Product" },
-			{ link: "/product-details", title: "Product Details" },
-			{ link: "/faq", title: "FAQ" },
-			{ link: "/contact", title: "Contact" },
-		],
-	},
+
+
+	// {
+	// 	id: 5,
+	// 	title: "Blog",
+	// 	link: "#",
+	// 	has_dropdown: true,
+	// 	sub_menus: [
+	// 		{ link: "/blog", title: "Blog" },
+	// 		{ link: "/blog-details", title: "Blog Details" },
+	// 	],
+	// },
+
+
+	// {
+	// 	id: 6,
+	// 	title: "Pages",
+	// 	link: "#",
+	// 	has_dropdown: true,
+	// 	sub_menus: [
+	// 		{ link: "/about", title: "About" },
+	// 		{ link: "/product-list", title: "Product" },
+	// 		{ link: "/product-details", title: "Product Details" },
+	// 		{ link: "/faq", title: "FAQ" },
+	// 		{ link: "/contact", title: "Contact" },
+	// 	],
+	// },
+
 
 	{
 		id: 7,

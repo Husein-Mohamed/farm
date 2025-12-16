@@ -40,14 +40,18 @@ export default function HeaderTwo() {
       </div>
 
 
-      <header id="header-sticky" className={`header-2 ${sticky ? "sticky" : ""}`}>
+      <header id="header-sticky" className={`header-2 ${sticky ? "sticky" : ""} style={{ minHeight: '80px' }} `}>
         <div className="container">
           <div className="mega-menu-wrapper">
             <div className="header-main">
               <div className="header-left">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="assets/img/logo/logo-black.png" alt="logo-img" />
+                      <img
+                      src="assets/img/logo/logo1.png"
+                      alt="logo-img"
+                      style={{ width: '300px', height: 'auto' }}
+                    />
                   </Link>
                 </div>
               </div>
